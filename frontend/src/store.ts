@@ -20,9 +20,11 @@ export const store = configureStore({
 
 export const history = createReduxHistory(store);
 
-// if (!isEmpty(localStorage.getItem("token"))) {
-//   store.dispatch(setToken(localStorage.getItem("token")));
-// }
+if (!isEmpty(localStorage.getItem("token"))) {
+  setTimeout(()=>{
+    store.dispatch(setToken(localStorage.getItem("token")));
+  }, 500)
+}
 // store.dispatch(setToken(localStorage.getItem("token")));
 console.log(localStorage.getItem("token"))
 // Infer the `RootState` and `AppDispatch` types from the store itself
