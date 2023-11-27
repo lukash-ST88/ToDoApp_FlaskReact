@@ -1,0 +1,18 @@
+.page {
+    margin: 5px;
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.page-component{
+    margin-top: 30px;
+    display: flex;
+}
+
+.page-current {
+    --tw-bg-opacity: 1;
+    border: 2px solid rgb(34 197 94 / var(--tw-bg-opacity));
+    font-weight: bold;
+}
